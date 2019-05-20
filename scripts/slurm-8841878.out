@@ -1,0 +1,25 @@
+
+The following have been reloaded with a version change:
+  1) python/2.7.11 => python/3.7.2
+
+Lmod has detected the following error: Cannot load module "biopython/1.73-py3"
+because these module(s) are loaded:
+   python
+
+While processing the following module(s):
+    Module fullname     Module Filename
+    ---------------     ---------------
+    biopython/1.73-py3  /sw/mf/rackham/bioinfo-tools/misc/biopython/1.73-py3
+
+Traceback (most recent call last):
+  File "/sw/apps/bioinfo/phylophlan/0.99/rackham/bin/phylophlan.py", line 27, in <module>
+    import taxcuration as taxc
+  File "/sw/apps/bioinfo/phylophlan/0.99/rackham/bin/taxcuration/taxcuration.py", line 8, in <module>
+    from scipy import stats
+ImportError: No module named scipy
+Traceback (most recent call last):
+  File "/sw/apps/bioinfo/phylophlan/0.99/rackham/bin/phylophlan.py", line 27, in <module>
+    import taxcuration as taxc
+  File "/sw/apps/bioinfo/phylophlan/0.99/rackham/bin/taxcuration/taxcuration.py", line 8, in <module>
+    from scipy import stats
+ImportError: No module named scipy

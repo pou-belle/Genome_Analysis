@@ -1,0 +1,30 @@
+125.0Gb memory in total.
+Using: 112.829Gb.
+MEGAHIT v1.1.2
+--- [Tue Apr  9 12:33:40 2019] Start assembly. Number of CPU threads 20 ---
+--- [Tue Apr  9 12:33:40 2019] Available memory: 134609682432, used: 121148714188
+--- [Tue Apr  9 12:33:40 2019] Converting reads to binaries ---
+    [read_lib_functions-inl.h  : 209]     Lib 0 (/home/marke/DNA_trimmed/SRR4342129_1.paired.trimmed.fastq.gz,/home/marke/DNA_trimmed/SRR4342129_2.paired.trimmed.fastq.gz): pe, 48110692 reads, 101 max length
+    [utils.h                   : 126]     Real: 127.3621	user: 44.9201	sys: 6.1199	maxrss: 152748
+--- [Tue Apr  9 12:35:48 2019] k list: 65,75,85,95,105 ---
+--- [Tue Apr  9 12:35:48 2019] Extracting solid (k+1)-mers and building sdbg for k = 65 ---
+--- [Tue Apr  9 13:13:31 2019] Assembling contigs from SdBG for k = 65 ---
+--- [Tue Apr  9 13:36:47 2019] Local assembling k = 65 ---
+--- [Tue Apr  9 14:00:02 2019] Extracting iterative edges from k = 65 to 75 ---
+--- [Tue Apr  9 14:04:06 2019] Building graph for k = 75 ---
+--- [Tue Apr  9 14:05:41 2019] Assembling contigs from SdBG for k = 75 ---
+--- [Tue Apr  9 14:15:47 2019] Local assembling k = 75 ---
+--- [Tue Apr  9 14:34:02 2019] Extracting iterative edges from k = 75 to 85 ---
+--- [Tue Apr  9 14:36:51 2019] Building graph for k = 85 ---
+--- [Tue Apr  9 14:38:12 2019] Assembling contigs from SdBG for k = 85 ---
+--- [Tue Apr  9 14:45:46 2019] Local assembling k = 85 ---
+--- [Tue Apr  9 15:01:57 2019] Extracting iterative edges from k = 85 to 95 ---
+--- [Tue Apr  9 15:03:47 2019] Building graph for k = 95 ---
+--- [Tue Apr  9 15:04:50 2019] Assembling contigs from SdBG for k = 95 ---
+--- [Tue Apr  9 15:12:20 2019] Local assembling k = 95 ---
+--- [Tue Apr  9 15:26:47 2019] Extracting iterative edges from k = 95 to 105 ---
+--- [Tue Apr  9 15:26:51 2019] Building graph for k = 105 ---
+--- [Tue Apr  9 15:27:46 2019] Assembling contigs from SdBG for k = 105 ---
+--- [Tue Apr  9 15:34:37 2019] Merging to output final contigs ---
+--- [STAT] 159945 contigs, total 118997084 bp, min 200 bp, max 128464 bp, avg 744 bp, N50 800 bp
+--- [Tue Apr  9 15:34:39 2019] ALL DONE. Time elapsed: 10858.884952 seconds ---
