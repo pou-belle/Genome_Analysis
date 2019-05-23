@@ -19,6 +19,7 @@ for bin in /domus/h1/marke/Genome_Analysis/results/metabat/metabat1/*
 do
 	bwa index $bin
 done
+r=/domus/h1/marke/Genome_Analysis/results/rna_trimmed_results
 
 for bin in /domus/h1/marke/Genome_Analysis/results/metabat/metabat2/*
 do
@@ -29,20 +30,20 @@ done
 for bin in /domus/h1/marke/Genome_Analysis/results/metabat/metabat1/*.fa
 do
 	echo "Running $bin"
-	bwa mem $bin  SRR4342137_out_1P.fastq.gz  SRR4342137_out_2P.fastq.gz > ${bin}_metabat1_SRR4342137.sam
-	bwa mem $bin <(zcat SRR4342137_out_1U.fastq.gz SRR4342137_out_2U.fastq.gz) >> ${bin}_metabat1_SRR4342137.sam
-    bwa mem $bin SRR4342139_out_1P.fastq.gz SRR4342139_out_2P.fastq.gz > ${bin}_metabat1_SRR4342139.sam
-    bwa mem $bin <(zcat SRR4342139_out_1U.fastq.gz SRR4342139_out_2U.fastq.gz) >>${bin}_metabat1_SRR4342139.sam
+	bwa mem $bin   $r/SRR4342137_out_1P.fastq.gz   $r/SRR4342137_out_2P.fastq.gz > ${bin}_metabat1_SRR4342137.sam
+	bwa mem $bin <(zcat  $r/SRR4342137_out_1U.fastq.gz  $r/SRR4342137_out_2U.fastq.gz) >> ${bin}_metabat1_SRR4342137.sam
+    bwa mem $bin  $r/SRR4342139_out_1P.fastq.gz  $r/SRR4342139_out_2P.fastq.gz > ${bin}_metabat1_SRR4342139.sam
+    bwa mem $bin <(zcat  $r/SRR4342139_out_1U.fastq.gz  $r/SRR4342139_out_2U.fastq.gz) >>${bin}_metabat1_SRR4342139.sam
 done
 
 
 for bin in /domus/h1/marke/Genome_Analysis/results/metabat/metabat2/*.fa
 do
 	echo "Running $bin"
-	bwa mem $bin  SRR4342137_out_1P.fastq.gz  SRR4342137_out_2P.fastq.gz > ${bin}_metabat2_SRR4342137.sam
-	bwa mem $bin <(zcat SRR4342137_out_1U.fastq.gz SRR4342137_out_2U.fastq.gz) >> ${bin}_metabat2_SRR4342137.sam
-    bwa mem $bin SRR4342139_out_1P.fastq.gz SRR4342139_out_2P.fastq.gz > ${bin}_metabat2_SRR4342139.sam
-    bwa mem $bin <(zcat SRR4342139_out_1U.fastq.gz SRR4342139_out_2U.fastq.gz) >>${bin}_metabat2_SRR4342139.sam
+	bwa mem $bin   $r/SRR4342137_out_1P.fastq.gz   $r/SRR4342137_out_2P.fastq.gz > ${bin}_metabat2_SRR4342137.sam
+	bwa mem $bin <(zcat  $r/SRR4342137_out_1U.fastq.gz  $r/SRR4342137_out_2U.fastq.gz) >> ${bin}_metabat2_SRR4342137.sam
+    bwa mem $bin  $r/SRR4342139_out_1P.fastq.gz  $r/SRR4342139_out_2P.fastq.gz > ${bin}_metabat2_SRR4342139.sam
+    bwa mem $bin <(zcat  $r/SRR4342139_out_1U.fastq.gz  $r/SRR4342139_out_2U.fastq.gz) >>${bin}_metabat2_SRR4342139.sam
 
 
 done
